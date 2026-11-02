@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<title>Ministry of Agriculture and Water Resources</title>
+<defs><path id="ring" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+<circle cx="100" cy="100" r="97" fill="#c9a43a" stroke="#5d4a12" stroke-width="2"/>
+<circle cx="100" cy="100" r="92" fill="#2e5a1c"/>
+<circle cx="100" cy="100" r="66" fill="#f3eccd" stroke="#c9a43a" stroke-width="3"/>
+<text font-family="Verdana,Arial,sans-serif" font-size="10.6" font-weight="bold" fill="#f3eccd" letter-spacing="0.6"><textPath href="#ring" startOffset="0">AYIL CHARBA JANA SUU BAYLIKTARI MINISTRLIGI &#183; ISEZ &#183;</textPath></text>
+<!-- water: three wavy lines -->
+<g fill="none" stroke="#2b6aa3" stroke-width="5" stroke-linecap="round">
+<path d="M48,128 q9,-7 18,0 t18,0 t18,0 t18,0 t18,0 t12,0"/>
+<path d="M54,142 q9,-7 18,0 t18,0 t18,0 t18,0 t18,0"/>
+</g>
+<!-- wheat ear -->
+<g fill="#b8891c" stroke="#5d4a12" stroke-width="1.2">
+<path d="M100,40 L100,118" fill="none" stroke="#5d4a12" stroke-width="3"/>
+<ellipse cx="100" cy="44" rx="5" ry="9"/>
+<ellipse cx="92" cy="56" rx="5" ry="9" transform="rotate(-28 92 56)"/><ellipse cx="108" cy="56" rx="5" ry="9" transform="rotate(28 108 56)"/>
+<ellipse cx="91" cy="70" rx="5" ry="9" transform="rotate(-28 91 70)"/><ellipse cx="109" cy="70" rx="5" ry="9" transform="rotate(28 109 70)"/>
+<ellipse cx="91" cy="84" rx="5" ry="9" transform="rotate(-28 91 84)"/><ellipse cx="109" cy="84" rx="5" ry="9" transform="rotate(28 109 84)"/>
+<ellipse cx="91" cy="98" rx="5" ry="9" transform="rotate(-28 91 98)"/><ellipse cx="109" cy="98" rx="5" ry="9" transform="rotate(28 109 98)"/>
+<path d="M100,112 q-22,-4 -30,-22 q18,2 30,18z" fill="#4c7d2a"/>
+<path d="M100,112 q22,-4 30,-22 q-18,2 -30,18z" fill="#4c7d2a"/>
+</g>
+</svg>

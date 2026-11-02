@@ -1,0 +1,72 @@
+/* DPI standard template for state bodies, id.gov, rev. 2010 */
+body{margin:0;padding:0 0 20px;background:#d5dde5 repeating-linear-gradient(90deg,#d5dde5 0,#d5dde5 3px,#d0d9e2 3px,#d0d9e2 4px);font-family:Verdana,Tahoma,Arial,sans-serif;font-size:11px;color:#222;line-height:1.45}
+a{color:#1b4e86}a:visited{color:#5a3f7a}a:hover{color:#c0392b}
+#wrap{width:960px;margin:0 auto;background:#fff;border:1px solid #8ea1b5;border-top:0;box-shadow:0 0 6px #9aa9b8}
+#topbar{background:#2b4258;color:#c9d6e3;font-size:10px;height:20px;line-height:20px;padding:0 8px;overflow:hidden}
+#topbar a{color:#dfe8f1;text-decoration:none;margin-right:10px}#topbar a:hover{text-decoration:underline}
+#topbar .r{float:right}#topbar .r a{margin:0 0 0 8px}#topbar .r b{color:#fff}
+#topbar .mob{background:#e0a92b;color:#2b4258!important;padding:1px 5px;font-weight:bold;border-radius:2px}
+#head{height:118px;position:relative;background:linear-gradient(to bottom,#7d98b3 0,#4f6f8f 45%,#36536f 46%,#2a445e 100%);border-bottom:3px solid #b8892b;overflow:hidden}
+#head:after{content:"";position:absolute;right:0;top:0;width:420px;height:118px;background:radial-gradient(ellipse at 70% 40%,rgba(255,255,255,.22),rgba(255,255,255,0) 60%)}
+#head .em{position:absolute;left:18px;top:11px;width:94px;height:94px;filter:drop-shadow(1px 2px 2px rgba(0,0,0,.45))}
+#head .t1{position:absolute;left:128px;top:24px;font:bold 22px Georgia,"Times New Roman",serif;color:#fff;text-shadow:1px 1px 2px #13283c;letter-spacing:.3px}
+#head .t2{position:absolute;left:129px;top:56px;font-size:11px;color:#f1d58a;font-weight:bold;letter-spacing:1px;text-transform:uppercase}
+#head .t3{position:absolute;left:129px;top:76px;font-size:10px;color:#cdd9e5}
+#head .srch{position:absolute;right:14px;top:14px;z-index:2;font-size:10px;color:#dbe5ee}
+#head .srch input[type=text]{width:130px;font:10px Verdana;border:1px solid #6b829a;padding:2px}
+#head .srch input[type=submit]{font:10px Verdana;padding:1px 4px;background:linear-gradient(#f4f4f4,#d4d4d4);border:1px solid #8a8a8a}
+#head .flag{position:absolute;right:14px;bottom:10px;z-index:2;font-size:10px;color:#c8d5e1}
+#datebar{background:linear-gradient(#f3f5f7,#dfe4e9);border-bottom:1px solid #b9c4cf;height:22px;line-height:22px;font-size:10px;color:#4b5d6f;padding:0 10px;overflow:hidden;white-space:nowrap}
+#datebar .run{display:inline-block;margin-left:24px;color:#9b2c1d;font-weight:bold}
+table.lay{width:100%;border-collapse:collapse}
+table.lay td{vertical-align:top}
+td.lm{width:186px;background:#eef2f6;border-right:1px solid #c7d1db;padding:8px 0 12px}
+td.cc{padding:10px 14px 18px}
+td.rc{width:200px;background:#f6f8fa;border-left:1px solid #d3dbe3;padding:8px 8px 12px}
+.mh{background:linear-gradient(#5d7a97,#3b5876);color:#fff;font:bold 11px Tahoma,Verdana,sans-serif;padding:4px 8px;margin:0 6px 0;border:1px solid #2f4964;text-transform:uppercase;letter-spacing:.3px}
+ul.menu{list-style:none;margin:0 6px 10px;padding:0;border:1px solid #c0ccd8;border-top:0;background:#fff}
+ul.menu li{border-top:1px solid #dde4eb}
+ul.menu a{display:block;padding:4px 6px 4px 16px;text-decoration:none;color:#1d3e60;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='7'><path d='M0 0l6 3.5L0 7z' fill='%23b8892b'/></svg>") 7px 8px no-repeat}
+ul.menu a:hover{background-color:#e3ebf3;text-decoration:underline}
+ul.menu a.cur{background-color:#d4e0ec;font-weight:bold}
+ul.menu a.old:after{content:" *";color:#999}
+.btn88{display:block;width:88px;height:31px;margin:6px auto;border:1px solid #888;background:linear-gradient(#fdfdfd,#d9d9d9);font:bold 9px/1.1 Arial,sans-serif;text-align:center;color:#234;text-decoration:none;box-sizing:border-box;padding-top:4px}
+.btn88 i{display:block;font-style:normal;font-weight:normal;color:#666}
+.cnt{display:block;width:88px;height:34px;margin:6px auto;background:#5b6b2f;border:1px solid #333;color:#fff;font:9px/1.1 Arial;text-align:center;padding-top:3px;box-sizing:border-box}
+.cnt b{display:block;color:#ff6;font:bold 10px "Courier New",monospace}
+.flash{width:100%;height:120px;box-sizing:border-box;border:1px solid #c9c9c9;background:#f4f4f4;margin:0 0 12px;position:relative}
+.flash:after{content:"";position:absolute;left:50%;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23bbb' d='M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5a2.5 2.5 0 0 0-5 0V5H4a2 2 0 0 0-2 2v3.8h1.5a2.7 2.7 0 0 1 0 5.4H2V20a2 2 0 0 0 2 2h3.8v-1.5a2.7 2.7 0 0 1 5.4 0V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 0-5z'/></svg>") center/contain no-repeat}
+.crumb{font-size:10px;color:#777;margin:0 0 8px}.crumb a{color:#556}
+h1{font:bold 15px Tahoma,Verdana,sans-serif;color:#1f3f63;margin:0 0 10px;padding:0 0 4px;border-bottom:1px dotted #9fb1c3}
+h2{font:bold 12px Tahoma,Verdana,sans-serif;color:#fff;background:#6c87a2;margin:16px 0 8px;padding:3px 7px}
+h3{font:bold 11px Verdana;color:#7a2a1b;margin:10px 0 4px}
+p{margin:0 0 8px}
+table.grid{border-collapse:collapse;width:100%;margin:4px 0 10px}
+table.grid th{background:#dbe3eb;border:1px solid #a9b8c7;padding:3px 5px;font-size:10px;text-align:left;color:#1f3f63}
+table.grid td{border:1px solid #c3ced9;padding:3px 5px;vertical-align:top}
+table.grid tr:nth-child(even) td{background:#f5f7f9}
+.welcome{overflow:hidden;background:#fbf8ef;border:1px solid #e3d7b5;padding:8px;margin:0 0 10px}
+.welcome img{float:left;width:72px;border:1px solid #999;margin:0 10px 0 0;padding:2px;background:#fff}
+.photo{float:right;width:220px;margin:0 0 8px 12px;border:1px solid #aaa;padding:3px;background:#fff;font-size:9px;color:#666}
+.photo img{width:100%;display:block;margin-bottom:2px}
+.nlist{margin:0;padding:0;list-style:none}
+.nlist li{padding:5px 0 6px;border-bottom:1px dashed #c7d1db}
+.nlist .d{color:#b0301c;font-weight:bold;font-size:10px;display:block}
+.nlist .d.blue{color:#2c5a86}
+.rbox{border:1px solid #c3ced9;background:#fff;margin:0 0 10px}
+.rbox .h{background:linear-gradient(#e9eef3,#cfd9e3);border-bottom:1px solid #b2c0ce;font:bold 10px Tahoma,Verdana;color:#28445f;padding:3px 6px;text-transform:uppercase}
+.rbox .b{padding:5px 7px}
+.rbox .more{display:block;text-align:right;font-size:10px;margin-top:4px}
+.doc{border:1px solid #d0d8e0;padding:6px 8px;margin:0 0 8px;background:#fcfdfe}
+.doc .m{font-size:10px;color:#666}
+.doc .st{font-size:9px;font-weight:bold;color:#3d6b2a;text-transform:uppercase}
+.ic{display:inline-block;width:14px;height:16px;vertical-align:-3px;margin-right:3px;background:#fff;border:1px solid #888;position:relative;box-sizing:border-box}
+.ic:after{content:"DOC";position:absolute;left:-1px;bottom:1px;font:bold 5px Arial;background:#1f4e9a;color:#fff;padding:0 1px}
+.ic.pdf:after{content:"PDF";background:#c0261d}
+.notice{border-left:3px solid #b8892b;background:#fffdf5;padding:5px 8px;margin:0 0 8px}
+.foot{background:linear-gradient(#e3e8ed,#c9d2db);border-top:3px solid #b8892b;font-size:10px;color:#3e4f60;padding:8px 12px;overflow:hidden}
+.foot .r{float:right;text-align:right}
+.foot a{color:#2a4b6d}
+.dead{color:#888!important;text-decoration:line-through}
+.sig{font-style:italic;color:#555}
+input,select,textarea{font:11px Verdana}
