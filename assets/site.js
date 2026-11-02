@@ -9,14 +9,20 @@ ru:{t1:"Министерство сельского хозяйства и вод
 days:["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"],months:["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"]}};
 function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
 function set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+var q=location.search.match(/[?&]lang=(en|ir|ru)\b/);if(q)set("moa_lang",q[1]);
 var lang=get("moa_lang")||"en";if(!T[lang])lang="en";
+/* the period mobile version: ?pda=1 / ?pda=0, remembered */
+var root=document.documentElement,pq=location.search.match(/[?&]pda=([01])\b/);if(pq)set("wave_pda",pq[1]);
+if(root.classList.contains("wave-1")&&get("wave_pda")==="1"){root.classList.add("pda");var vp=document.querySelector('meta[name="viewport"]');if(vp)vp.setAttribute("content","width=device-width, initial-scale=1");
+  var mb=document.querySelector(".w1-bar a.mob");if(mb){mb.href="?pda=0";mb.textContent="Full version"}}
 function $(id){return document.getElementById(id)}
 function apply(){var t=T[lang],els=document.querySelectorAll("[data-i]");
   for(var i=0;i<els.length;i++){var k=els[i].getAttribute("data-i");if(t[k])els[i].textContent=t[k]}
   var d=new Date(),el=$("today");
   if(el)el.textContent=lang==="en"?t.days[d.getDay()]+", "+d.getDate()+" "+t.months[d.getMonth()]+" "+d.getFullYear():
     lang==="ru"?t.days[d.getDay()]+", "+d.getDate()+" "+t.months[d.getMonth()]+" "+d.getFullYear()+" г.":d.getFullYear()+"-jılı "+d.getDate()+"-"+t.months[d.getMonth()]+", "+t.days[d.getDay()].toLowerCase();
-  document.documentElement.lang=lang==="ir"?"ky":lang}
+  document.documentElement.lang=lang==="ir"?"ky":lang;
+  var lg=document.querySelectorAll("a.lg");for(var j=0;j<lg.length;j++){var on=lg[j].getAttribute("data-lang")===lang;lg[j].style.fontWeight=on?"bold":"";lg[j].style.textDecoration=on?"none":"";if(on)lg[j].setAttribute("aria-current","true");else lg[j].removeAttribute("aria-current")}}
 var ls=document.querySelectorAll("[data-lang]");
 for(var i=0;i<ls.length;i++)ls[i].onclick=function(e){e.preventDefault();lang=this.getAttribute("data-lang");set("moa_lang",lang);apply()};
 apply();
